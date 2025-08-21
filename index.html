@@ -40,7 +40,7 @@
       </h1>
 
       <!-- Mobile Hamburger Menu -->
-      <details class="sm:hidden relative">
+      <details class="sm:hidden relative" id="mobileMenu">
         <summary class="cursor-pointer list-none">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-orange-500" fill="none" viewBox="0 0 24 24"
             stroke="currentColor">
@@ -48,11 +48,11 @@
           </svg>
         </summary>
         <nav class="absolute right-0 mt-2 bg-white shadow-lg rounded-lg flex flex-col space-y-2 py-2 w-40 z-50">
-          <a href="#home" class="hover:underline px-4 py-2">Home</a>
-          <a href="#about" class="hover:underline px-4 py-2">About</a>
-          <a href="#skills" class="hover:underline px-4 py-2">Skills</a>
-          <a href="#education" class="hover:underline px-4 py-2">Education</a>
-          <a href="#contact" class="hover:underline px-4 py-2">Contact</a>
+          <a href="#home" class="hover:underline px-4 py-2" onclick="document.getElementById('mobileMenu').removeAttribute('open')">Home</a>
+          <a href="#about" class="hover:underline px-4 py-2" onclick="document.getElementById('mobileMenu').removeAttribute('open')">About</a>
+          <a href="#skills" class="hover:underline px-4 py-2" onclick="document.getElementById('mobileMenu').removeAttribute('open')">Skills</a>
+          <a href="#education" class="hover:underline px-4 py-2" onclick="document.getElementById('mobileMenu').removeAttribute('open')">Education</a>
+          <a href="#contact" class="hover:underline px-4 py-2" onclick="document.getElementById('mobileMenu').removeAttribute('open')">Contact</a>
         </nav>
       </details>
 
